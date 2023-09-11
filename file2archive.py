@@ -37,6 +37,9 @@ def file2archive():
         except TypeError:
             pass
 
+        except AttributeError:
+            pass
+
         match event:
             case "Compress":
                 try:
